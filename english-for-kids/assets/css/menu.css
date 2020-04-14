@@ -1,0 +1,30 @@
+.nav__menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.menu__shadow {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.menu__body {
+  width: 320px;
+  height: 100vh;
+  box-shadow: 10px 0 50px black;
+}
+
+.menu__links {
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
+.menu__link {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.menu-link {
+  color: black;
+}
