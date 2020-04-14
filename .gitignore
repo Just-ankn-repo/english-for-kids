@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Projects ignore
+.eslintrc.js
+package-lock.json
+package.json
+webpack.config.js
