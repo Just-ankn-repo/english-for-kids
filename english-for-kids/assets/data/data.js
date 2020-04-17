@@ -8,7 +8,7 @@ export default {
       translate: 'оранжевый',
       examples: ['Pumpkin', 'Carrot', 'Basketball'],
     },
-    Yellow: {
+    yellow: {
       translate: 'желтый',
       examples: ['Cheese', 'Sun', 'Butter', 'Lemon'],
     },
