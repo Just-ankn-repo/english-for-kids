@@ -49,12 +49,12 @@ header {
 .mode-switcher__inner:before {
   content: "PLAY";
   padding-left: 10px;
-  background-color: #FFB13A; color: #000000;
+  background-color: #39C8C6; color: #000000;
 }
 .mode-switcher__inner:after {
   content: "TRAIN";
   padding-right: 10px;
-  background-color: #39C8C6; color: #000000;
+  background-color: #FFB13A; color: #000000;
   text-align: right;
 }
 .mode-switcher__switch {

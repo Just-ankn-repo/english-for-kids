@@ -22,3 +22,11 @@ img { pointer-events: none; }
 .play {
   background-color: #FFB13A;
 }
+
+main {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.95;
+}

@@ -19,12 +19,14 @@
 
 
 .category-item__background {
+  position: relative;
   width: 200px;
   height: 200px;
   border-radius: 20px;
   padding-top: 20px;
   box-shadow: 0 4px 10px black;
 }
+
 
 .category-item__content {
   width: 85%;
@@ -41,7 +43,7 @@
   margin-top: -10px;
   width: 100%;
   height: auto;
-  border-radius: 20px 20px 50% 50%;
+  border-radius: 20px 20px 0 0;
 }
 
 .category-item__text {
