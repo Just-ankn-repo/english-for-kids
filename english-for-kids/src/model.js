@@ -5,7 +5,11 @@ export default class Model {
     this.data = data;
   }
 
-  getData(category) {
-    return (!category) ? Object.getOwnPropertyNames(this.data) : this.data[`${category}`];
+  getCategories() {
+    return Object.getOwnPropertyNames(this.data);
+  }
+
+  getCategory(_category) {
+    return Object.entries(this.data[`${_category}`]);
   }
 }
