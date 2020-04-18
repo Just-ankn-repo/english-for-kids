@@ -1,4 +1,3 @@
-import Controller from './controller';
+import router from './router';
 
-const controller = new Controller();
-controller.init();
+router.init();
