@@ -1,5 +1,4 @@
 .categories__container {
-  padding: 2%;
   display: flex;
   justify-content: center;
 }
@@ -7,6 +6,7 @@
 .categories__content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .category-item {

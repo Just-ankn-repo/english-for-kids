@@ -1,6 +1,7 @@
 header {
-  height: 100%;
+  width: 100%;
   box-shadow: 0 1px 6px black;
+  z-index: 10;
 }
 
 .header__container {
@@ -12,23 +13,63 @@ header {
 }
 
 .header__menu-button {
-  cursor: pointer;
-  font-size: 40px;
-  color: #D3500C;
-  font-weight: bolder;
+  position: relative;
   margin-left: 10px;
-  border: 1px solid gray;
   line-height: 35px;
   padding: 5px;
-  border-radius: 10px;
+  z-index: 999;
 }
 
-.header__menu-button:active {
-  transform: scale(0.9);
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 999;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+  z-index: 999;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
 }
 
 .header__mode-switcher {
-  position: relative; width: 90px;
+  position: relative; width: 110px;
 }
 .mode-switcher__checkbox {
   display: none;
@@ -58,10 +99,10 @@ header {
   text-align: right;
 }
 .mode-switcher__switch {
-  display: block; width: 30px; margin: 0px;
+  display: block; width: 40px; margin: 0px;
   background: #D3500C;
   position: absolute; top: 0; bottom: 0;
-  right: 56px;
+  right: 70px;
   border: 2px solid #FFFFFF; border-radius: 20px;
   transition: all 0.3s ease-in 0s; 
 }
