@@ -5,10 +5,9 @@ export default function header(_mode, _currPage = ['', '']) {
   return `<div class="header__wrapper ${_mode}" id="header_wrapper">
             <div class="header__container">
               <div class="header__menu-button" id="menu_button">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
+                <div class="menu__btn" id="menu__btn">
                   <span></span>
-                </label>
+                </div>
               </div>
               <div class="header__current-page">${_currPage[0]} / ${_currPage[1]}</div>
               <div class="header__mode-switcher">

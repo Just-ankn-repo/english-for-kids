@@ -5,7 +5,7 @@ header {
 }
 
 .header__container {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,28 +20,23 @@ header {
   z-index: 999;
 }
 
-#menu__toggle {
-  opacity: 0;
-}
-
 .menu__btn {
-  position: relative;
   display: flex;
   align-items: center;
-  position: fixed;
   top: 20px;
-  left: 20px;
+  left: 30px;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 999;
 }
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 26px;
   height: 2px;
   background-color: #616161;
   transition-duration: .25s;
@@ -56,14 +51,14 @@ header {
   top: 8px;
 }
 
-#menu__toggle:checked ~ .menu__btn > span {
+.menu__btn.close > span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked ~ .menu__btn > span::before {
+.menu__btn.close > span::before {
   top: 0;
   transform: rotate(0);
 }
-#menu__toggle:checked ~ .menu__btn > span::after {
+.menu__btn.close > span::after {
   top: 0;
   transform: rotate(90deg);
 }

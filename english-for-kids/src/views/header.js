@@ -35,7 +35,7 @@ export default class Header {
 
     this.headerWrapper = document.getElementById('header_wrapper');
     this.modeSwitcher = document.getElementById('mode_switcher');
-    this.menuButton = document.getElementById('menu__toggle');
+    this.menuButton = document.getElementById('menu__btn');
 
     this.headerListeners.onModeSwitch(this.modeSwitcher);
     this.headerListeners.onMenuButton(this.menuButton);

@@ -9,14 +9,20 @@ export default {
   },
 
   onMenuButton(_menuButton) {
-    $on(_menuButton, 'change', (event) => {
-      if (event.target.checked === true) {
+    $on(_menuButton, 'click', () => {
+      const button = document.getElementById('menu__btn');
+      if (!button.classList.contains('close')) {
+        button.classList.add('close');
         $event.sendEvent('showMenu', 'show');
-        $on(document.body, 'click', function hideMenu() {
-          $event.sendEvent('showMenu', 'hide');
-          document.body.removeEventListener('click', hideMenu);
-          document.getElementById('menu__toggle').checked = false;
-        });
+        setTimeout(() => {
+          $on(document.body, 'click', function hideMenu() {
+            if (document.getElementById('menu__btn').classList.contains('close')) {
+              $event.sendEvent('showMenu', 'hide');
+              document.getElementById('menu__btn').classList.remove('close');
+              document.body.removeEventListener('click', hideMenu);
+            }
+          });
+        }, 100);
       }
     });
   },
