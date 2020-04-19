@@ -46,45 +46,249 @@ export default {
     },
   },
   fruit: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+    apple: {
+      translate: 'яблоко',
+      examples: [],
+    },
+    apricot: {
+      translate: 'абрикос',
+      examples: [],
+    },
+    peach: {
+      translate: 'персик',
+      examples: [],
+    },
+    cherry: {
+      translate: 'вишня',
+      examples: [],
+    },
+    orange: {
+      translate: 'апельсин',
+      examples: [],
+    },
+    pear: {
+      translate: 'груша',
+      examples: [],
+    },
+    plum: {
+      translate: 'слива',
+      examples: [],
+    },
+    lime: {
+      translate: 'лайм',
+      examples: [],
     },
   },
   numbers: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+    zero: {
+      translate: 'ноль',
+      examples: [],
+    },
+    one: {
+      translate: 'один',
+      examples: [],
+    },
+    two: {
+      translate: 'два',
+      examples: [],
+    },
+    three: {
+      translate: 'три',
+      examples: [],
+    },
+    four: {
+      translate: 'четыре',
+      examples: [],
+    },
+    five: {
+      translate: 'пять',
+      examples: [],
+    },
+    six: {
+      translate: 'шесть',
+      examples: [],
+    },
+    seven: {
+      translate: 'семь',
+      examples: [],
+    },
+    eight: {
+      translate: 'восемь',
+      examples: [],
+    },
+    nine: {
+      translate: 'девять',
+      examples: [],
     },
   },
   vegetables: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+    cucumber: {
+      translate: 'огурец',
+      examples: [],
+    },
+    garlic: {
+      translate: 'чеснок',
+      examples: [],
+    },
+    potato: {
+      translate: 'картошка',
+      examples: [],
+    },
+    pumpkin: {
+      translate: 'тыква',
+      examples: [],
+    },
+    carrot: {
+      translate: 'морковь',
+      examples: [],
+    },
+    tomato: {
+      translate: 'помидор',
+      examples: [],
+    },
+    broccoli: {
+      translate: 'брокколи',
+      examples: [],
+    },
+    onion: {
+      translate: 'лук',
+      examples: [],
     },
   },
   countries: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+    ireland: {
+      translate: 'ирландия',
+      examples: [],
+    },
+    sweden: {
+      translate: 'швеция',
+      examples: [],
+    },
+    china: {
+      translate: 'китай',
+      examples: [],
+    },
+    norway: {
+      translate: 'норвегия',
+      examples: [],
+    },
+    canada: {
+      translate: 'канада',
+      examples: [],
+    },
+    india: {
+      translate: 'индия',
+      examples: [],
+    },
+    germany: {
+      translate: 'германия',
+      examples: [],
+    },
+    japan: {
+      translate: 'япония',
+      examples: [],
     },
   },
   professions: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+    chef: {
+      translate: 'повар',
+      examples: [],
+    },
+    doctor: {
+      translate: 'доктор',
+      examples: [],
+    },
+    policeman: {
+      translate: 'полицейский',
+      examples: [],
+    },
+    farmer: {
+      translate: 'фермер',
+      examples: [],
+    },
+    fireman: {
+      translate: 'пожарный',
+      examples: [],
+    },
+    teacher: {
+      translate: 'учитель',
+      examples: [],
+    },
+    musician: {
+      translate: 'музыкант',
+      examples: [],
+    },
+    astronaut: {
+      translate: 'астронавт',
+      examples: [],
     },
   },
   animals: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+    hippo: {
+      translate: 'бегемот',
+      examples: [],
+    },
+    monkey: {
+      translate: 'обезьяна',
+      examples: [],
+    },
+    rhino: {
+      translate: 'носорог',
+      examples: [],
+    },
+    snake: {
+      translate: 'змея',
+      examples: [],
+    },
+    dog: {
+      translate: 'собака',
+      examples: [],
+    },
+    elephant: {
+      translate: 'слон',
+      examples: [],
+    },
+    tiger: {
+      translate: 'тигр',
+      examples: [],
+    },
+    sheep: {
+      translate: 'овца',
+      examples: [],
     },
   },
-  kitchen_stuff: {
-    Red: {
-      translate: 'Красный',
-      examples: ['Strawberry', 'Rose', 'Fire engine', 'Blood', 'Heart'],
+  kitchen: {
+    spoon: {
+      translate: 'ложка',
+      examples: [],
+    },
+    fork: {
+      translate: 'вилка',
+      examples: [],
+    },
+    plate: {
+      translate: 'тарелка',
+      examples: [],
+    },
+    knife: {
+      translate: 'нож',
+      examples: [],
+    },
+    napkin: {
+      translate: 'салфетка',
+      examples: [],
+    },
+    bowl: {
+      translate: 'чаша',
+      examples: [],
+    },
+    teapot: {
+      translate: 'чайник',
+      examples: [],
+    },
+    whisk: {
+      translate: 'веничек',
+      examples: [],
     },
   },
 };
