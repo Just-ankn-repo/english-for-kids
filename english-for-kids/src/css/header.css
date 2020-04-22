@@ -1,4 +1,5 @@
 header {
+  position: fixed;
   width: 100%;
   box-shadow: 0 1px 6px black;
   z-index: 10;
@@ -12,98 +13,161 @@ header {
   justify-content: space-between;
 }
 
-.header__menu-button {
-  position: relative;
-  margin-left: 10px;
-  line-height: 35px;
-  padding: 5px;
-  z-index: 999;
+.header__menu-container {
+  flex:2;
 }
 
-.menu__btn {
+.header__menu-button {
+  position: relative;
   display: flex;
   align-items: center;
-  top: 20px;
-  left: 30px;
+  left: 10px;
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 999;
+  z-index: 150;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.header__menu-text {
+  font-size: 30px;
+  padding-left: 35px;
+}
+
+.header__menu-button > span,
+.header__menu-button > span::before,
+.header__menu-button > span::after {
   display: block;
   position: absolute;
   width: 26px;
   height: 2px;
   background-color: #616161;
   transition-duration: .25s;
-  z-index: 999;
+  z-index: 149;
 }
-.menu__btn > span::before {
+
+.header__menu-button > span::before {
   content: '';
   top: -8px;
 }
-.menu__btn > span::after {
+
+.header__menu-button > span::after {
   content: '';
   top: 8px;
 }
 
-.menu__btn.close > span {
+.header__menu-button.close > span {
   transform: rotate(45deg);
 }
-.menu__btn.close > span::before {
+
+.header__menu-button.close > span::before {
   top: 0;
   transform: rotate(0);
 }
-.menu__btn.close > span::after {
+
+.header__menu-button.close > span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-.header__mode-switcher {
-  position: relative; width: 110px;
+.header__current-page {
+  font-size: 30px;
 }
+
+.header__mode-switcher-container {
+  flex: 2;
+}
+
+.header__mode-switcher {
+  position: relative;
+  width: 110px;
+  float: right;
+}
+
 .mode-switcher__checkbox {
   display: none;
 }
+
 .mode-switcher__label {
-  display: block; overflow: hidden; cursor: pointer;
-  border: 2px solid #FFFFFF; border-radius: 20px;
+  display: block; 
+  overflow: hidden; 
+  cursor: pointer;
+  border: 2px solid #FFFFFF; 
+  border-radius: 20px;
 }
+
 .mode-switcher__inner {
-  display: block; width: 200%; margin-left: -100%;
+  display: block; 
+  width: 200%; 
+  margin-left: -100%;
   transition: margin 0.3s ease-in 0s;
 }
+
 .mode-switcher__inner:before, .mode-switcher__inner:after {
-  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  display: block; 
+  float: left; 
+  width: 50%; 
+  height: 30px; 
+  padding: 0; 
+  line-height: 30px;
+  font-size: 14px; 
+  color: white; 
+  font-weight: bold;
   box-sizing: border-box;
 }
+
 .mode-switcher__inner:before {
   content: "PLAY";
   padding-left: 10px;
-  background-color: #39C8C6; color: #000000;
+  background-color: #39C8C6; 
+  color: #000000;
 }
+
 .mode-switcher__inner:after {
   content: "TRAIN";
   padding-right: 10px;
   background-color: #FFB13A; color: #000000;
   text-align: right;
 }
+
 .mode-switcher__switch {
-  display: block; width: 40px; margin: 0px;
+  display: block; 
+  width: 40px; 
+  margin: 0px;
   background: #D3500C;
   position: absolute; top: 0; bottom: 0;
   right: 70px;
   border: 2px solid #FFFFFF; border-radius: 20px;
   transition: all 0.3s ease-in 0s; 
 }
+
 .mode-switcher__checkbox:checked + .mode-switcher__label .mode-switcher__inner {
   margin-left: 0;
 }
+
 .mode-switcher__checkbox:checked + .mode-switcher__label .mode-switcher__switch {
   right: 0px; 
+}
+
+@media (max-width: 600px) {
+
+  .header__menu-text {
+    display: none;
+  }
+
+  .header__current-page {
+    font-size: 20px;
+  }
+
+  .header__mode-switcher {
+    width: 80px;
+  }
+
+  .mode-switcher__inner:before, .mode-switcher__inner:after {
+    font-size: 10px;
+  }
+
+  .mode-switcher__switch {
+    width: 30px; 
+    right: 50px;
+  }
 }

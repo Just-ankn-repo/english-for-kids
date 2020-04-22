@@ -7,6 +7,7 @@
   vertical-align: baseline;
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 
 body {
@@ -15,10 +16,10 @@ body {
 
 img { pointer-events: none; }
 
-.train {
-  background-color: #39C8C6;
+.app__mode_train {
+  background-color: rgba(57, 200, 198, 0.8);
 }
 
-.play {
-  background-color: #FFB13A;
+.app__mode_play {
+  background-color: rgba(255, 177, 58, 0.9);
 }

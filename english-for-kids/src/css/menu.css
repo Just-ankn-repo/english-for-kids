@@ -1,0 +1,67 @@
+nav {
+  position: fixed;
+  top: 74px;
+  z-index: 50;
+}
+
+nav.hide {
+  animation-duration: 1.5s;
+  animation-name: hide;
+  margin-left: -100%;
+}
+
+nav.show {
+  animation-duration: 0.5s;
+  animation-name: show;
+}
+
+@keyframes show {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes hide {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: -100%;
+  }
+}
+
+.menu__wrapper {
+  position: absolute;
+  width: 320px;
+  height: calc(100vh - 74px);
+  z-index: 100;
+  box-shadow: 0 1px 6px black;
+  overflow-y: auto;
+}
+
+.menu__links {
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
+.menu__link {
+  font-size: 30px;
+  line-height: 50px;
+  margin: 10px 0;
+}
+
+.menu__item-image {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px
+}
+
+.menu-link {
+  display: flex;
+}
