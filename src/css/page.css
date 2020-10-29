@@ -72,12 +72,11 @@
 
 .page__item-flip-button {
   position: absolute;
-  align-self: flex-end;
+  right: 25px;
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 2px 5px;
   background-color: honeydew;
-  margin-left: 60px;
 }
 
 .page__item.word-card {
